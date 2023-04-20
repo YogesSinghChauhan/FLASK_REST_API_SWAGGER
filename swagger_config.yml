@@ -1,0 +1,25 @@
+summary: "REST API"
+description: "Rest API Swagger"
+consumes:
+- "application/json"
+produces:
+- "application/json"
+parameters:
+- in: "body"
+  name: "body"
+  description: "Accept subject marks and Subject name "
+  required: true
+  schema:
+    type: "object"
+    properties:
+      Marks:
+        type: "integer"
+        example : 50
+
+      Subject:
+        type: "string"
+        example : 'Maths'
+
+responses:
+  405:
+    description: "Invalid input"
